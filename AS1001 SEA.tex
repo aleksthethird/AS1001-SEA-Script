@@ -6,7 +6,7 @@ Synopsis: SEA answers the basic question 'what is a star?'. This includes measur
 
 \section{Introduction}
 
-Astronomy is: the study of the stars. But astronomy also covers planets, gas clouds, galaxies, black holes, pulsars, the Universe itself - so, everything in the material world except things on Earth.
+Astronomy is: the study of the stars. But astronomy also covers planets, gas clouds, galaxies, black holes, pulsars, the Universe itself - so, \textit{everything in the material world except things on Earth}.
 
 Astronomy needs physics, chemistry, mathematics (and perhaps biology?).
 
@@ -32,7 +32,7 @@ In astronomy, $p$ (the parallax) is measured in \textit{arcseconds} (arcsec). 1"
 
 \subsection{The parsec}
 
-A parsec is defined as the distance of an object that has a parallax of 1 arcsec. Fig. 2 illustrates the idea. The semi-major axis of the Earth's orbit is $1.5 \cdot 10^{11}$\,m (defined as 1\,Astronomical Unit). If the parallax is measured in arcsec, the distance $d$ to the star from the Sun in units of parsec is simply:
+A \textit{parsec} is defined as the distance of an object that has a parallax of 1 arcsec. Fig. 2 illustrates the idea. The semi-major axis of the Earth's orbit is $1.5 \cdot 10^{11}$\,m (defined as 1\,Astronomical Unit). If the parallax is measured in arcsec, the distance $d$ to the star from the Sun in units of parsec is simply:
 
 \begin{equation}
 d = 1/p
@@ -44,7 +44,7 @@ The closest stars to the Sun are at 1.3\,pc (and a parallax of 0.75" the $\alpha
 
 \subsection{Measuring the parallax}
 
-Critical question: How accurately can we measure positions of stars? Parallaxes are very small angles! First successful measurements in 1838-1839. Today, 0.05" can be done with ground-based telescopes. The satellite Hipparcos (1989-1993) measured parallaxes for 100.000 stars with 0.001" accuracy. The satellite Gaia (2013+) will get parallaxes for one billion stars with 0.0001" accuracy - this is still only 1\% of the stars in the Milky Way.
+How accurately can we measure positions of stars? Parallaxes are very small angles! First successful measurements in 1838-1839. Today, 0.05" can be done with ground-based telescopes. The satellite Hipparcos (1989-1993) measured parallaxes for 100.000 stars with 0.001" accuracy. The satellite Gaia (2013+) will get parallaxes for one billion stars with 0.0001" accuracy - this is still only 1\% of the stars in the Milky Way.
 
 This means: The parallax only covers our cosmic neighbourhood. We need other methods for objects at larger distances. There are many more methods to determine distances of stars, some will be discussed in other parts of SEA1001. But all are based on the parallax.
 
@@ -56,7 +56,7 @@ The \textit{luminosity} $L$ is the total energy emitted by a star per seconds, i
 
 \subsection{Inverse square law for the propagation of light}
 
-Flux and luminosity are related through the basic law that describes the propagation of light. The light from a star spreads out isotropically (i.e. the same amount in all directions) over the surface of a sphere(see Fig. 3). The flux is therefore:
+Flux and luminosity are related through the basic law that describes the propagation of light. The light from a star spreads out \textit{isotropically} (i.e. the same amount in all directions) over the surface of a sphere(see Fig. 3). The flux is therefore:
 
 \begin{equation}
 f = L / (4 \pi d^2)
@@ -64,15 +64,35 @@ f = L / (4 \pi d^2)
 
 Example: Assume a detector measure f=1 for a star. Now we move the detector further away. At twice the distance, the light from the star has spread out to cover four times the surface, i.e. a light detector with a fixed area collects 1/4 of the light. The flux drops with the inverse square of the distance.
 
-Equ 3 contains three quantities, flux, luminosity and distance. The flux can be measured. The inverse square law can be used to determine luminosities, if the distance is known (from the parallax). can be used to determine distances, if the luminosity of a star is known. It can also be used to determine distances, if the luminosity of a star is known. This second aspect leads to the concept of standard candles.
+Equ 3 contains three quantities, flux, luminosity and distance. The flux can be measured on Earth. The inverse square law can be used to determine luminosities, if the distance is known (from the parallax). can be used to determine distances, if the luminosity of a star is known. It can also be used to determine distances, if the luminosity of a star is known. This second aspect leads to the concept of standard candles.
 
 \subsection{Standard candles and cepheids}
 
-A standard candle is an astronomical object with a known brightness, i.e. we know in some way how much light it emits. From this and the measured flux the distance can be derived using the inverse square law. Standard candles usually have properties that do not vary with distance.
+A \textit{standard candle} is an astronomical object with a known brightness, i.e. we know in some way how much light it emits. From this and the measured flux the distance can be derived using the inverse square law. Standard candles usually have properties that do not vary with distance.
 
-Cepheids are one example for standard candles. These are supergiant stars which vary in brightness due to pulsation. Their pulsation period and their luminosity are related - the longer the period the larger the luminosity (see Fig. 4). From the period and the flux the distance can be derived.
+\textit{Cepheids} are one example for standard candles. These are supergiant stars which vary in brightness due to pulsation. Their pulsation period and their luminosity are related - the longer the period the larger the luminosity (see Fig. 4). From the period and the flux the distance can be derived.
 
 \subsection{Units for the brightness of stars}
 
 The unit of the flux is Watts per square meter. This is very small for astronomical objects. Often used instead: unit 'Jansky' which is defined as $1\,Jy = 10^{-26}$\,W\,m$^{-2}$\,Hz${-1}$
+
+Flux is measured on a linear scale, i.e. a source of 10\,Jy is ten times brighter than a source of 1\,Jy. This is inconvenient in astronomy, more useful would be a logarithmic scale $\log{(f)}$. This leads to the concept of magnitudes.
+
+\subsection{Magnitudes}
+
+The unit magnitudes is derived from a system first used by the Greek astronomer Hipparcox (2nd century BC). In his catalogue of stars, 1st magnitude are the brightest stars, 6th are the stars that are just visible for the human eye. This system has now been adopted and extended for modern astronomy. The relation between fluxes and magnitudes is:
+
+\begin{equation}
+m_1 - m_2 = -2.5 \log{(f_1 / f_2)}
+\end{equation}
+
+\begin{equation}
+f_1 / f_2 = 10^{(m_1 - m_2) / -2.5}
+\end{equation}
+
+This is a logarithmic system, but with a scaling factor of 2.5. This factor means that 5\,mag difference correspond to a factor of 100 in flux. The zeropoint for the magnitude scale is Vega at $m = 0.0$.
+
+\subsection{Absolute magnitudes}
+
+
 
