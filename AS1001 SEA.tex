@@ -1,20 +1,18 @@
 \section{What is this?}
 
-This is the script for the 'Stars and Elementary Astrophysics' (SEA) lectures, which are part of AS1001. The script covers the \textit{skeleton of facts} for this course, including important equations and numbers. \textit{It is not a replacement for taking notes at the lectures.} The lectures will cover everything in this script, but with more illustrations, explanations, figures, animations, and examples. The slides from the lectures will \textit{not} be on Moodle. Important terms and concepts are marked with italics. Important equations are in bold. The textbook for this course is Kutner's 'Astronomy - A Physical Perspective'. 
+This is the script for the 'Stars and Elementary Astrophysics' (SEA) lectures, which are part of AS1001. The script covers the \textit{skeleton of facts} for this course, including important equations and numbers. \textit{It is not a replacement for taking notes in the lectures.} The lectures will cover everything in this script, but with more illustrations, explanations, figures, animations, and examples. The slides from the lectures will \textit{not} be on Moodle. Important terms and concepts are marked with italics. Important equations are numbered. The textbook for this course is Kutner's 'Astronomy - A Physical Perspective'. 
 
 Synopsis: SEA answers the basic question 'what is a star?'. This includes measuring distances to stars, and finding out how large, hot, massive stars are. SEA also covers the essential toolkit for astronomers - telescopes and instruments - as well as the basics of electromagnetic radiation. \textit{SEA is the fundament for all other astronomy modules.}
 
 \section{Introduction}
 
-Astronomy is: the study of the stars. But astronomy also covers planets, gas clouds, galaxies, black holes, pulsars, the Universe itself - so, \textit{everything in the material world except things on Earth}.
+Astronomy is: the study of the stars. But astronomy also covers planets, gas clouds, galaxies, black holes, pulsars, the Universe itself - \textit{everything in the material world except things on Earth}. Astronomy needs physics, chemistry, mathematics (and perhaps biology?).
 
-Astronomy needs physics, chemistry, mathematics (and perhaps biology?).
-
-\textit{What is a star?} To the eye, stars are points of light at the night sky. They are grouped in \textit{constellations} - these are arbitrary groupings of stars, which means: chance projections, no physical groups. Today only meaningful to 'find your way' on the sky. Examples for well-known constellations are Orion, Ursa Major, Taurus, Cassiopeia. 
+\textit{What is a star?} To the eye, stars are points of light at the night sky. They are grouped in \textit{constellations}. These are arbitrary groupings of stars - chance projections, no physical groups. Examples for well-known constellations are Orion, Ursa Major, Taurus, Cassiopeia. 
 
 The constellations that are visible change over the year (due to the rotation of the Earth around the Sun) and over the night (due to the rotation of the Earth). 
 
-Looking at the night sky shows: stars have different brightnesses, colours, positions. \textit{But what is a star really?}
+Looking at the night sky shows: Stars have different brightnesses and colours. \textit{But what is a star really?}
 
 \section{Distances to stars}
 
@@ -22,23 +20,24 @@ Fundamental problem: A point of light at the sky could be a nearby candle or a v
 
 \subsection{Parallax}
 
-The parallax method is based on \textit{triangulation}. The basic principle is explained in Fig. 1. If we can measure the angle p and the baseline s in the triangle, we can infer the distance: $\tan{(p)} = s/d$, i.e. $d = s/\tan{(p)}$. For small $p$, we can use the small angle approximation, $\tan{(tp)} \sim p$. That means:
+The parallax method is based on \textit{triangulation}. The basic principle is explained in Fig. \ref{fig1}. If we can measure the angle p and the baseline s in the triangle, we can infer the distance: $\tan{(p)} = s/d$, i.e. $d = s/\tan{(p)}$. For small $p$, we can use the small angle approximation, $\tan{(tp)} \sim p$. That means:
 
 \begin{equation}
 d = s/p
 \end{equation}
 
-In astronomy, $p$ (the parallax) is measured in \textit{arcseconds} (arcsec). 1" = 1 arcsec = 1/3600th of one degree. This is a very small angle.
+In astronomy, the distance Earth-Sun is used as baseline. The parallax is the apparent motion of stars on the sky caused by the rotation of the Earth around the Sun. Fig. \ref{fig2} illustrates the parallax motion of a star. The parallax of stars $p$ is measured in \textit{arcseconds} (arcsec). 1" = 1 arcsec = 1/3600th of one degree. This is a very small angle.
 
 \subsection{The parsec}
 
-A \textit{parsec} is defined as the distance of an object that has a parallax of 1 arcsec. Fig. 2 illustrates the idea. The semi-major axis of the Earth's orbit is $1.5 \cdot 10^{11}$\,m (defined as 1\,Astronomical Unit). If the parallax is measured in arcsec, the distance $d$ to the star from the Sun in units of parsec is simply:
+A \textit{parsec} is defined as the distance of an object that has a parallax of 1 arcsec. The semi-major axis of the Earth's orbit is $1.5 \cdot 10^{11}$\,m (defined as 1\,Astronomical Unit). If the parallax is measured in arcsec, the distance $d$ to the star from the Sun in units of parsec is simply:
 
 \begin{equation}
 d = 1/p
+\label{eq1}
 \end{equation}
 
-What is 1\,pc in metric units? Start with Equ 1, $d = s/p$. Use $s = 1\,\mathrm{AU} = 1.5 \cdot 10^{11}$\,m. 1\,pc distance means $p = 1" = (1/3600)$ degrees. Convert this to radians and put in Equ 1: $d = 1.5 \cdot 10^{11} / 0.0000048 = 3.1 \cdot 10^{16}$\,m. 
+What is 1\,pc in metric units? Start with Equ \eqref{eq1}, $d = s/p$. Use $s = 1\,\mathrm{AU} = 1.5 \cdot 10^{11}$\,m. 1\,pc distance means $p = 1" = (1/3600)$ degrees. Convert this to radians and put in Equ 1: $d = 1.5 \cdot 10^{11} / 0.0000048 = 3.1 \cdot 10^{16}$\,m. 
 
 The closest stars to the Sun are at 1.3\,pc (and a parallax of 0.75" the $\alpha$\,Centauri system (a triple star). There are several hundred stars within 10\,pc, among them Sirius, Vega, Procyon, Altair, some of the brightest stars on the sky.
 
