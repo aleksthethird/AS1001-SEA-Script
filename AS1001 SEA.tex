@@ -189,17 +189,69 @@ Factors that are neglected here: elliptic orbits, inclination of orbits against 
 
 \subsection{Eclipsing binaries}
 
-Fig. XXX shows the lightcurve of an eclipsing binary system. From the lightcurve, $t_1$, $t_2$, $t_3$, $t_4$ can be measured. The geometry of the system then gives expressions for the diameter $D_1$ and $D_2$ of the stars:
+Fig \ref{fig6} shows the lightcurve of an eclipsing binary system. From the lightcurve, $t_1$, $t_2$, $t_3$, $t_4$ can be measured. The geometry of the system then gives expressions for the diameter $D_1$ and $D_2$ of the stars:
 
 \begin{equation}
 (t_4 - t_1) / P = (D_1 + D_2) / (2 \pi R)
+\label{eq13}
 \end{equation}
 
 \begin{equation}
 (t_3 - t_2) / P = (D_1 - D_2) / (2 \pi R)
+\label{e14}
 \end{equation}
 
 With these two equations the sizes of the stars can be derived in units of the orbital separation $R$. The radial velocities ($v_1$, $v_2$) and the period $P$ yield $R$, and thus the radii of the stars. This only works in an eclipsing binary which is also a spectroscopic binary. This rare type of system is therefore extremely important in astronomy.
+
+\section{Radiation from stars}
+
+\subsection{Electromagnetic radiation}
+
+Summary of important facts:
+\begin{itemize}
+\item{EMR travels with the speed of light ($c = 3\cdot10^8$ms$^{-1}$}
+\item{EMR has wave-like properties (e.g., interference).}
+\item{EMR is described by a wavelength $\lambda$ or a frequency $\nu$,
+with $c = \nu\lambda$.}
+\item{EMR also has particle-like properties (e.g., photoelectric effect).}
+\item{A 'light particle' or photon is a packet of energy with $E = h \nu = h c / \lambda$ ($h$: Planck's constant).}
+\end{itemize}
+
+\subsection{Blackbodies}
+
+A blackbody is an idealised body in thermodynamical equilibrium with its surroundings, absorbing all radiation incident on it, and then re-radiating it. Every warm object emits blackbody radiation caused by the thermal motions of its particles.
+
+A blackbody emits some energy at all wavelengths. The spectrum of a blackbody -- the emitted flux as a function of wavelength -- is described by the Planck function shown in Fig. \ref{fig7} (in units of Wm$^{-2}$Hz$^{-1}$ster$^{-1}$).
+
+\begin{equation}
+B(\nu,T) = (2h\nu^3/c^2) / (e^{h\nu/kT} - 1)
+\label{eq15}
+\end{equation}
+
+At every wavelength, a hotter blackbody emits more energy than a cooler one. The peak of the Planck function shifts towards shorter wavelengths for higher temperatures. For a blackbody with temperature $T$ there is a wavelength $\lambda_{\mathrm{max}}$ at which is radiates its maximum energy, the peak of the Planck function. This is described by Wien's law. 
+
+\begin{equation}
+\lambda_{\mathrm{max}} T = 0.0029 \mathrm{m K}
+\label{eq16}
+\end{equation}
+
+Example: Sun with $T = 5800$\,K$, i.e. $\lambda_{\mathrm{max}} \approx 500$\,nm
+
+For long wavelengths and small frequencies (i.e. radio radiation), Planck's law can be approximated by the Rayleigh-Jeans law:
+
+\begin{equation}
+B(\nu,T) = 2kT \nu^2 / c^2
+\label{eq17}
+\end{equation}
+
+Integrating over Equ \eqref{eq15} over all directions and frequencies yields the entire energy output of a blackbody per second per square meter, describe by the Stefan-Boltzmann law ($\sigma = 5.67$\,Wm$^{-2}$K$^{-4}):
+
+\begin{equation}
+E(T) = \sigma T^4
+\label{eq18}
+\end{equation}
+
+The total energy emitted by a blackbody depends strongly on temperature.
 
 \section{Synopsis}
 
