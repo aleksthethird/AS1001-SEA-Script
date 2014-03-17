@@ -202,7 +202,7 @@ Fig \ref{fig6} shows the lightcurve of an eclipsing binary system. From the ligh
 
 \begin{equation}
 (t_3 - t_2) / P = (D_1 - D_2) / (2 \pi R)
-\label{e14}
+\label{eq14}
 \end{equation}
 
 With these two equations the sizes of the stars can be derived in units of the orbital separation $R$. The radial velocities ($v_1$, $v_2$) and the period $P$ yield $R$, and thus the radii of the stars. This only works in an eclipsing binary which is also a spectroscopic binary. This rare type of system is therefore extremely important in astronomy.
@@ -280,13 +280,39 @@ Stars emit continouous radiation due to the thermal motion of particles. The con
 
 \subsection{Origin of spectral lines}
 
-Spectral lines are caused by absorption or emission of EMR in atoms or molecules in the atmospheres of stars. An atom can absorb or emit only photons of certain $\lambda$, when electrons 'jump' from one energy level to another. The change in energy is proportional to the frequency of the emitted or absorbed photon, $E = h \nu = h c / \lambda$. The energy differences between the electron levels in atoms are very small, typically in the range of electron Volts (1 eV is $1.602\cdot10^{-19}$ J).
+Spectral lines are caused by absorption or emission of EMR in atoms or molecules in the atmospheres of stars. An atom can absorb or emit only photons of certain $\lambda$, when electrons 'jump' from one energy level to another. The change in energy is proportional to the frequency of the emitted or absorbed photon:
+
+\begin{equation}
+E = h \nu = h c / \lambda
+\label{eq20}
+\end{equation}
+
+The energy differences between the electron levels in atoms are very small, typically in the range of electron Volts (1 eV is $1.602\cdot10^{-19}$ J).
 
 \subsection{Spectral lines in Hydrogen}
 
+Hydrogen is the simplest atom, with only one proton and one electron. The energy levels for the Hydrogen electron are shown in Fig \ref{f9}.
+
+The energy difference between ground state ($n=1$) and first excited state  ($n=2$) is $E_{12} = 10.2$\,eV. With Equ \eqref{eq20} this gives $\lambda_{12} = 121.6$\,nm. This line is called \textit{Lyman $\alpha$} and is in the ultraviolet part of the spectrum. Other transitions to or from the ground state have higher energies, i.e. shorter wavelengths. The Lyman limit at $\lambda = 91.2$\,nm corresponds to the energy required to move an electron from the ground state to 'infinity', i.e. out of the Hydrogen atom.
+
+In general, the wavelength for the photons corresponding to the transitions in the Hydrogen atom are described by the \textit{Rydberg equation}:
+
+\begin{equation}
+1/\lambda = R (1/n_l^2 - 1/n_u^2)
+\label{eq21}
+\end{equation}
+
+Here, $R$ is the Rydberg constant ($R = 1.097 \cdot 10^{-7}$\,m${^-1}$). $n_l$ and $n_u$ are the quantum numbers of the lower and upper level in a specific transition.
+
+Lyman series: $n_l = 1$, $n_u >1$, in the UV
+Balmer series: $n_l = 2$, $n_u >2$, in the optical
+Paschen series: $n_l = 3$, $n_u >3$, in the infrared
+
+
+
 \subsection{Equivalent widths}
 
-The \textit{equivalent width} is a quantity that expresses how strong an absorption line is. In Fig \ref{fig9} the basic principle is illustrated. The equivalent width is the area of a rectangle, from zero to the continuum level, that has the same area as the absorption line. Note that the equivalent width is measured in units of wavelength.
+The \textit{equivalent width} is a quantity that expresses how strong an absorption line is. In Fig \ref{fig10} the basic principle is illustrated. The equivalent width is the area of a rectangle, from zero to the continuum level, that has the same area as the absorption line. Note that the equivalent width is measured in units of wavelength.
 
 \subsection{Spectral types}
 
