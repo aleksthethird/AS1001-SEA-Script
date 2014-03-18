@@ -363,24 +363,74 @@ b) \textit{Reflectors} use mirrors (at least one, usually more than one) to focu
 
 \subsection{Reflector optics}
 
-The path of light through a reflector is shown in Fig \ref{f13}. Important concepts are the \textit{focal plane} (the plane where the light is focused) and the \textit{effective focal length} $f_e$ (the distance between objective lense and focal plane.
+The path of light through a refractor is shown in Fig \ref{f13}. Important concepts are the \textit{focal plane} (the plane where the light is focused) and the \textit{effective focal length} $f_e$ (the distance between objective lense and focal plane.
 
 The focal ratio $f$ of a telescope is defined as $f = f_e/D$ (with $D$ being the diameter of the lens/mirror). The focal ratio describes how fast the beam converges to the focal plane. The focal ratio is usually written in units of the aperture. Example: A telescope with $D = 1$\,m and $f_e = 3$\,m has a focal ratio of $f/3$. 
 
 Small $f/$ means small image scale, but fast light collection (light is concentrated into a small area in the focal plane). This is ideal for wide-field surveys. Large $f/$ means large image scale, but slow light collection. This is ideal for seeing details and measuring accurate positions.
 
-\subsection{Resolving power}
+\subsection{Diffraction limit}
 
 The \textit{resolution} of a telescope is the minimum angular separation of two sources on the sky, that can be seen separately. 
 
-The resolution is limited by the diffraction of light around the edges of the optics in the telescope. It depends on the aperture of the telescope and the wavelength of the light. For a circular aperture, each source of light causes an \textit{Airy pattern} of concentric rings in the focal plane. \textit{Rayleigh's criterion} provides an equation for the \textit{diffraction limit} of a telescope (the absolute limit of the resolving power);
+The resolution is limited by the diffraction of light around the edges of the optics in the telescope. For a circular aperture, the diffraction causes each source of light to appear as a series of concentric rings in the focal plane (\textit{Airy pattern}). \textit{Rayleigh's criterion} provides an equation for the \textit{diffraction limit} of a telescope:
 
 \begin{equation}
-\alpha = 1.22 \lambda / D \mathrm{radians} \sim 2.5 \cdot 10^5 \lambda / D \mathrm{arcsec}
+\alpha = 1.22 \lambda / D\,\mathrm{radians} \sim 2.5 \cdot 10^5 \lambda / D\,\mathrm{arcsec}
 \label{eq22}
 \end{equation}
 
 Here, $D$ is the diameter of the aperture of the telescope (i.e. the diameter of the objective lens or the main mirror). Examples for observations at optical wavelength ($\lambda = 500$\,nm): $\alpha = 1$\,arcsec for $D = 0.125$\,m. $\alpha = 0.03$\,arcsec for 4-m telescope.
+
+\section{Observations with astronomical telescopes}
+
+Observations from the ground are affected by the atmosphere of the Earth in several ways.
+
+\subsection{Seeing}
+
+Stars appear blurred in images from the ground because of turbulent motions of the air along the line of sight which rapidly change the refraction index of the air. In typical images with exposure times of seconds or more, stars therefore appear as a 'disk' -- the superposition of many different 'speckles'. The diameter of this disk is called the \textit{seeing}. 
+
+Typically the seeing for good sites is 0.5-1\,arcsec; in St Andrews we reach 2\,arcsec. Compare this with the diffraction limit -- for typical astronomical observations with telescope aperture $>>10$\,cm, the seeing determines the resolving power of a telescope.
+
+\subsection{Extinction}
+
+Extinction is the absorption and scattering of light along the line of sight by molecules in the atmosphere. The extinction depends strongly on wavelength. The atmosphere is almost transparent in the optical wavelength domain (300-800\,nm) and in the radio (1\,cm to 20\,m). In addition there are smaller windows in the infrared. In the IR most of the absorption is due to water vapour. Everywhere else the atmosphere absorbs all the light (for example, UV and X-ray radiation).  
+
+\subsection{Sites for astronomical telescopes}
+
+When choosing the site for a big telescope, a number of factors needs to be considered:
+
+\begin{itemize}
+\item{weather: many clear nights desirable, i.e. above main cloud layer ($>2000$\,m), very low rainfall}
+\item{seeing}
+\item{light pollution}
+\item{low humidity}
+\item{accessible}
+\item{political factors}
+\end{itemize}
+
+Most big telescopes are built in dry areas on the top of mountains. Examples: La Palma, Mauna Kea in Hawaii, Cerro Paranal in the Atacama desert in Chile
+
+\section{Instruments}
+
+Images are used to study structures of galaxies or nebulae, to measure brightnesses of stars (photometry), or to measure positions of objects (astrometry).
+
+Before 1980s, the typical imaging device was the \textit{photographic plate}. Digitised versions of photographic plate material are still in use (for example, the Digital Sky Survey).
+
+Nowadays, digital cameras are widespread in astronomy. For optical observations, \textit{CCDs} (charge-coupled devices) are used. CCDs are more sensitive than photographs, particularly in the red. They constitute a grid of 1000's of pixels, typical pixel size is $\sim 15\,\mu m$.
+
+Spectra are a record of the emitted light as a function of wavelength. They are measured with a \textit{spectrograph}. The light from the telescope enters the spectrograph through a slit, then is dispersed on a grism or a prism, before being recorded with a camera.
+
+An important parameter of spectrographs is the spectral resolution $R$:
+
+\begin{equation}
+R = \lambda / \Delta\lambda
+\label{eq23}
+\end{equation}
+
+$R$ depends on slit width, grating properties, pixel size, seeing, etc. 
+
+For example: A Doppler shift of 10\,km/s needs to be measured. What spectral resolution is needed? Combining Eq \ref{eq7} and Eq \ref{eq23} we obtain: $R = \lambda / \Delta\lambda = c / v  = 30000$. For $\lambda = 450$\,nm, this corresponds to a wavelength shift of $\Delta\lambda = 0.015$\,nm (which is very small).
 
 \section{Synopsis}
 
